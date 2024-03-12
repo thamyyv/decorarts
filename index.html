@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD de Imagens</title>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('gallery')">Gallery</a>
+    <a href="#" onclick="showPage('add')">Add Image</a>
+</div>
+
+<div id="home" class="container">
+    <h2>Welcome to the Home Page</h2>
+    <!-- Conteúdo da página inicial -->
+</div>
+
+<div id="gallery" class="container" style="display: none;">
+    <h2>Gallery</h2>
+    <div class="image-grid">
+        <!-- Aqui serão exibidas as imagens -->
+    </div>
+</div>
+
+<div id="add" class="container" style="display: none;">
+    <h2>Add Image</h2>
+    <form id="addImageForm">
+        <input type="file" id="imageInput" accept="image/*">
+        <button type="submit">Upload Image</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
