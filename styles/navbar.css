@@ -6,6 +6,7 @@ body {
     font-size: large;
     margin: 0;
     padding: 0; 
+    background-image: linear-gradient(to right top, #fcf6f4, #faf2f0, #f8efec, #f6ebe7, #f4e8e3);
 }
 
 #navbar-container {
