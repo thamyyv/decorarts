@@ -1,15 +1,3 @@
-/*.atalho-container {
-    background-color: aquamarine;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.item-img {
-    height: 20rem;
-}*/
-
 .atalho-container {
     margin: 2rem 0;
     display: flex;
@@ -38,6 +26,8 @@
 
 .item-titulo {
     margin-top: 10px;
+    color: #432c23;
+    font-size: 25px;
 }
 
 .item-titulo:hover {
