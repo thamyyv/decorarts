@@ -18,12 +18,14 @@
     font-family: "Arsenal", sans-serif;
     font-weight: 700;
     font-size: 80px;
+    text-align: center;
 }
 
 .subtitulo {
     color: #432c23;
     position: absolute;
-    margin-top: 13rem;
+    margin: 13rem 2rem;
+    text-align: center;
 }
 
 .imagens {
