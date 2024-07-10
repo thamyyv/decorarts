@@ -1,291 +1,472 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-        <title>Porta Maternidade</title>
-        <link rel="stylesheet" href="styles/navbar.css">
-        <link rel="stylesheet" href="styles/atalho.css">
-        <link rel="stylesheet" href="styles/pagina.css"> 
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <title>Porta Maternidade</title>
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/atalho.css" />
+    <link rel="stylesheet" href="styles/pagina.css" />
+  </head>
 
-    <body>
+  <body>
+    <section id="navbar-container">
+      <nav class="navbar">
+        <div class="navbar-mobile">
+          <span id="navbar-logo">
+            <img
+              src="https://r.mobirisesite.com/359041/assets/images/decorarts-removebg-preview-1.png"
+              alt="DecorArt's Logo"
+            />
+          </span>
 
-        <section id="navbar-container">
-            <nav class="navbar">
-                <div>
-                    <span id="navbar-logo">
-                        <img src="https://r.mobirisesite.com/359041/assets/images/decorarts-removebg-preview-1.png" >
-                    </span>
+          <button
+            class="navbar-toggler"
+            id="navbar-toggler"
+            onclick="toggleNavbar()"
+          >
+            &#9776;
+          </button>
 
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="decorarts.html">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="decorarts.chaveiros.html" aria-expanded="false">Chaveiros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="decorarts.personagens.html">Personagens</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="decorarts.bichinhos.html">Bichinhos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="decorarts.portamat.html">Porta Maternidade</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="decorarts.mobile.html">Móbile<br></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="decorarts.naninhas.html">Naninhas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="decorarts.varaldeberco.html">Varal de Berço</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="decorarts.sousplat.html">Sousplat</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="decorarts.mandalas.html">Mandalas</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </section>
-
-        <div class="imagens-container">
-
-            <div class="apresentação">
-                <h3 class="titulo"><strong>Porta Maternidade</strong></h3>
-                <h4 class="subtitulo">Onde as boas-vindas se tornam inesquecíveis!</h4>
-            </div>
-          
-            <div class="imagens">
-
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/gallery02-h_lt8qx0pk.jpg">
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/images/0d57b58669eef1b0694962be2c8d01c9.jpg">
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/images/0e165a7734be7a5dad6ca9914f13b890.jpg">
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/0e24407caf31009709218c768ca5e-h_lt8qyeen.jpg">
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/2eb934799f994be6e3d564d04b7a5-h_lt8qytcm.jpg">
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/images/4feb8c0ae3f3f63ba7b51bdab3b38c82.jpg">
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/6f8980e0b5e4164b011a5f16d5f86-h_lt8qzek8.jpg">
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/7d15253a55bdb3c2d18615c2edf17-h_lt8qzysu.jpg">
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/images/7f52a3c17c9c78a760d349b1cd1c7555.jpg">
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/7fda4a3c96981b955be8e1ea59865-h_lt8r0aou.jpg">
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/8c338e68a7ff62f27c66632863009-h_lt8r0k9i.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/images/9e5091221cb4b3a465899cf2ed696afb.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/images/15de97caf2b78cf0d64f9242cdaf768d.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/images/43ec416837178cd9559a2755931a01d2.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/images/59a214c8cec538d86a909f1a76c02d4b.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/141-h_lt8r1mxa.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/188e7fbfba14519b1618f886b0732-h_lt8r292w.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/325c6d6cb892e0a11155c57466506-h_lt8r2kmd.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/444d7e86aebf132706ffeb92bc471-h_lt8r30w5.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/7a909f83-bdaa-4524-94eb-17281-h_lt8w6tfy.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/504d482aef8251fa070e3643f453e-h_lt8wa18r.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/706e3aadfeee424af2e1a85a0eeb6-h_lt8waaxx.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/782eee8674d2e606a83907ea7d5b0-h_lt8watd0.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/904caaa7129acfad4025749cb668e-h_lt8wakvv.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/1973e98f40c6d9b7e73ac4185d09e-h_lt8wbwv7.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/8524aa970c57f7315e269362750bd-h_lt8wdhec.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/19936f76b0b1862d1bdb0c328c871-h_lt8wdr7g.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/29092d27e3ed87a239d220c3cf222-h_lt8wefiy.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/74244ff7d20ba68450d48547470e6-h_lt8wer5f.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/94860fc9d6a126b9821dab45dbc41-h_lt8wfg7u.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/243862c615449b92e196afa7cbc24-h_lt8wh5g9.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/1149973d0e213ae70bb529130ce2b-h_lt8whm9f.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/47468384fde6460a0303bdd7251f3-h_lt8wi0mj.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/4876784198ad6a97f34bfa51e0756-h_lt8wii9s.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/2076317673602ebfd5a3ebcc396db-h_lt8wittn.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/a94f865bdb6391163c3639a60cdea-h_lt8wjrgq.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/images/a72074ac6c45f94ad70cbaff52b8fcd5.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/images/a38631588fd974ab7724c3525f4331d9.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/b599216f9f20f40a7bc950809f50d-h_lt8wk9iq.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/bf68af101cd92b8e68c1eac4cbc99-h_lt8wklzu.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/c1bb90e1e6f49e56bab09e7d85bb8-h_lt8wlcgv.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/ca931723f7f25c9dbbe76d4687090-h_lt8wlqp4.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/caf73424e7d7ba538072ddc3d20ce-h_lt8wm3dk.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/cb909a222b54b04fb0e277c443726-h_lt8wmf2q.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/d3bfff12f50c71a58b4d8f127ae17-h_lt8wmu9r.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/d10870e3e4336392609a5f6390bf6-h_lt8wo4wv.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/e0ec6a66819a2ffdb668f27f65731-h_lt8wocpy.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/e1748da35b2a7da72f17af6edf9b6-h_lt8womnr.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/e64764098b245b38d85423c34da9c-h_lt8woywm.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/images/f8ce11606a4cf93862a634f5a6725e04.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/f50b4069e634e1724a22fb997808e-h_lt8wqy35.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/f9596865b380c7cc5d49c8e61cd14-h_lt8wrjjp.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/f99697284aa74aee20808ec9107b8-h_lt8wrsm6.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/fa06be418d42df1b009741a798a03-h_lt8ws0ti.jpg" >
-              </div>
-              
-              <div class="img-completo">
-                  <img class="img" src="https://r.mobirisesite.com/359041/assets/images/fddfd2ac41a07453668cc7218705e-h_lt8wsjlq.jpg" >
-              </div>
-
-            </div>
-
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="decorarts.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="decorarts.chaveiros.html">Chaveiros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="decorarts.personagens.html"
+                >Personagens</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="decorarts.bichinhos.html">Bichinhos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="decorarts.portamat.html"
+                >Porta Maternidade</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="decorarts.mobile.html">Móbile<br /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="decorarts.naninhas.html">Naninhas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="decorarts.varaldeberco.html"
+                >Varal de Berço</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="decorarts.sousplat.html">Sousplat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="decorarts.mandalas.html">Mandalas</a>
+            </li>
+          </ul>
         </div>
-    </body>
+      </nav>
+    </section>
+
+    <div class="imagens-container">
+      <div class="apresentação">
+        <h3 class="titulo"><strong>Porta Maternidade</strong></h3>
+        <h4 class="subtitulo">Onde as boas-vindas se tornam inesquecíveis!</h4>
+      </div>
+
+      <div class="imagens">
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/gallery02-h_lt8qx0pk.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/images/0d57b58669eef1b0694962be2c8d01c9.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/images/0e165a7734be7a5dad6ca9914f13b890.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/0e24407caf31009709218c768ca5e-h_lt8qyeen.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/2eb934799f994be6e3d564d04b7a5-h_lt8qytcm.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/images/4feb8c0ae3f3f63ba7b51bdab3b38c82.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/6f8980e0b5e4164b011a5f16d5f86-h_lt8qzek8.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/7d15253a55bdb3c2d18615c2edf17-h_lt8qzysu.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/images/7f52a3c17c9c78a760d349b1cd1c7555.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/7fda4a3c96981b955be8e1ea59865-h_lt8r0aou.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/8c338e68a7ff62f27c66632863009-h_lt8r0k9i.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/images/9e5091221cb4b3a465899cf2ed696afb.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/images/15de97caf2b78cf0d64f9242cdaf768d.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/images/43ec416837178cd9559a2755931a01d2.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/images/59a214c8cec538d86a909f1a76c02d4b.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/141-h_lt8r1mxa.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/188e7fbfba14519b1618f886b0732-h_lt8r292w.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/325c6d6cb892e0a11155c57466506-h_lt8r2kmd.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/444d7e86aebf132706ffeb92bc471-h_lt8r30w5.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/7a909f83-bdaa-4524-94eb-17281-h_lt8w6tfy.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/504d482aef8251fa070e3643f453e-h_lt8wa18r.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/706e3aadfeee424af2e1a85a0eeb6-h_lt8waaxx.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/782eee8674d2e606a83907ea7d5b0-h_lt8watd0.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/904caaa7129acfad4025749cb668e-h_lt8wakvv.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/1973e98f40c6d9b7e73ac4185d09e-h_lt8wbwv7.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/8524aa970c57f7315e269362750bd-h_lt8wdhec.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/19936f76b0b1862d1bdb0c328c871-h_lt8wdr7g.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/29092d27e3ed87a239d220c3cf222-h_lt8wefiy.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/74244ff7d20ba68450d48547470e6-h_lt8wer5f.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/94860fc9d6a126b9821dab45dbc41-h_lt8wfg7u.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/243862c615449b92e196afa7cbc24-h_lt8wh5g9.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/1149973d0e213ae70bb529130ce2b-h_lt8whm9f.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/47468384fde6460a0303bdd7251f3-h_lt8wi0mj.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/4876784198ad6a97f34bfa51e0756-h_lt8wii9s.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/2076317673602ebfd5a3ebcc396db-h_lt8wittn.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/a94f865bdb6391163c3639a60cdea-h_lt8wjrgq.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/images/a72074ac6c45f94ad70cbaff52b8fcd5.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/images/a38631588fd974ab7724c3525f4331d9.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/b599216f9f20f40a7bc950809f50d-h_lt8wk9iq.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/bf68af101cd92b8e68c1eac4cbc99-h_lt8wklzu.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/c1bb90e1e6f49e56bab09e7d85bb8-h_lt8wlcgv.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/ca931723f7f25c9dbbe76d4687090-h_lt8wlqp4.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/caf73424e7d7ba538072ddc3d20ce-h_lt8wm3dk.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/cb909a222b54b04fb0e277c443726-h_lt8wmf2q.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/d3bfff12f50c71a58b4d8f127ae17-h_lt8wmu9r.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/d10870e3e4336392609a5f6390bf6-h_lt8wo4wv.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/e0ec6a66819a2ffdb668f27f65731-h_lt8wocpy.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/e1748da35b2a7da72f17af6edf9b6-h_lt8womnr.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/e64764098b245b38d85423c34da9c-h_lt8woywm.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/images/f8ce11606a4cf93862a634f5a6725e04.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/f50b4069e634e1724a22fb997808e-h_lt8wqy35.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/f9596865b380c7cc5d49c8e61cd14-h_lt8wrjjp.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/f99697284aa74aee20808ec9107b8-h_lt8wrsm6.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/fa06be418d42df1b009741a798a03-h_lt8ws0ti.jpg"
+          />
+        </div>
+
+        <div class="img-completo">
+          <img
+            class="img"
+            src="https://r.mobirisesite.com/359041/assets/images/fddfd2ac41a07453668cc7218705e-h_lt8wsjlq.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

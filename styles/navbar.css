@@ -1,123 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 body {
-    font-family: "Arsenal", sans-serif;
-    font-weight: 400;
-    font-size: large;
-    margin: 0;
-    padding: 0; 
-    background-image: linear-gradient(to right top, #fcf6f4, #faf2f0, #f8efec, #f6ebe7, #f4e8e3);
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+  font-size: large;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    to right top,
+    #fcf6f4,
+    #faf2f0,
+    #f8efec,
+    #f6ebe7,
+    #f4e8e3
+  );
 }
 
 #navbar-container {
-    background-color: #c2a393;
-    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.356);
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    width: 100%;
+  background-color: #c2a393;
+  box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.356);
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  width: 100%;
 }
 
 .navbar {
-    background-color: #c2a393;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+  background-color: #c2a393;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
 #navbar-logo {
-    display: flex;
-    justify-content: center;
-    margin: 2rem;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
 }
 
 #navbar-logo img {
-    height: 8rem;
-    max-width: 100%;
+  height: 8rem;
+  max-width: 100%;
 }
 
 .navbar-nav {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0;
 }
 
 .nav-item {
-    margin: 10px 0;
+  margin: 10px 0;
+  padding-bottom: 1rem;
 }
 
 .nav-link {
-    color: #432c23;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
+  color: #432c23;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
 }
 
 .nav-link:hover {
-    background-color: #6c54449c;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.356);
-    color: #f4f1ec;
+  background-color: #6c54449c;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.356);
+  color: #f4f1ec;
 }
 
 .navbar-toggler {
-    display: none; /* Esconde o botão "hambúrguer" em telas maiores */
+  display: none; /* Esconde o botão "hambúrguer" em telas maiores */
 }
 
 @media (max-width: 1260px) {
-    .navbar-nav {
-        display: none; /* Esconde o menu em telas menores */
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #c2a393; /* Cor de fundo do menu */
-        width: 100%; /* Largura total */
-        padding: 10px 0; /* Espaçamento interno */
-        z-index: 1000; /* Garante que o menu esteja acima de outros elementos */
-    }
+  .navbar-nav {
+    display: none; /* Esconde o menu em telas menores */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #c2a393; /* Cor de fundo do menu */
+    border-radius: 0 0 10px;
+    padding: 10px 0; /* Espaçamento interno */
+    z-index: 999; /* Garante que o menu esteja acima de outros elementos */
+  }
 
-    .navbar-nav.active {
-        display: flex; /* Exibe o menu quando o botão "hambúrguer" é clicado */
-        flex-direction: column;
-        align-items: center;
-    }
+  .navbar-nav.active {
+    display: flex; /* Exibe o menu quando o botão "hambúrguer" é clicado */
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .navbar-toggler {
-        display: block; /* Exibe o botão "hambúrguer" em telas menores */
-        width: auto;
-        height: 3rem;
-        background-color: #432c23bd;
-        color: #f4f1ec;
-        border: none;
-        border-radius: 10px;
-        font-size: 30px;
-        cursor: pointer;
-        margin: 2rem; /* Adiciona margem para afastar do logotipo */
-    }
+  .navbar-toggler {
+    display: block; /* Exibe o botão "hambúrguer" em telas menores */
+    width: auto;
+    height: 3rem;
+    background-color: #432c23;
+    color: #f4f1ec;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 2rem; /* Adiciona margem para afastar do logotipo */
+  }
 
-    .navbar-mobile {
-        display: flex;
-        align-items: center;
-        justify-content: space-between; /* Garante espaçamento entre itens */
-        width: 100%;
-        padding: 0 1rem;
-    }
+  .navbar-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Garante espaçamento entre itens */
+    width: 100%;
+    padding: 0 1rem;
+    position: relative;
+  }
 
-    #navbar-logo {
-        margin: 1rem; /* Remove a margem para centralizar verticalmente */
-        object-fit: cover; /* Impede que a imagem seja distorcida */
-    }
+  #navbar-logo {
+    margin: 1rem; /* Remove a margem para centralizar verticalmente */
+    object-fit: cover; /* Impede que a imagem seja distorcida */
+  }
 
-    #navbar-logo img {
-        height: 6rem; /* Ajusta a altura da imagem para telas menores */
-    }
+  #navbar-logo img {
+    height: 6rem; /* Ajusta a altura da imagem para telas menores */
+  }
 
-    #navbar-container {
-        flex-direction: column;
-    }
+  #navbar-container {
+    flex-direction: column;
+  }
 
-    .open {
-        display: flex;
-    }
+  .open {
+    display: block !important;
+  }
+
+  .nav-link {
+    color: #432c23;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  .nav-link:hover {
+    background-color:  #c2a393;
+    border-radius: 4px;
+    color: #f4f1ec;
+  }
 }
