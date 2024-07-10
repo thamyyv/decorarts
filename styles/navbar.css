@@ -31,7 +31,7 @@ body {
     margin: 2rem;
 }
 
-#navbar-logo img{
+#navbar-logo img {
     height: 8rem;
     max-width: 100%;
 }
@@ -44,7 +44,7 @@ body {
 }
 
 .nav-item {
-    margin: 15px 10px;
+    margin: 10px 0;
 }
 
 .nav-link {
@@ -59,4 +59,65 @@ body {
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.356);
     color: #f4f1ec;
+}
+
+.navbar-toggler {
+    display: none; /* Esconde o botão "hambúrguer" em telas maiores */
+}
+
+@media (max-width: 1260px) {
+    .navbar-nav {
+        display: none; /* Esconde o menu em telas menores */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #c2a393; /* Cor de fundo do menu */
+        width: 100%; /* Largura total */
+        padding: 10px 0; /* Espaçamento interno */
+        z-index: 1000; /* Garante que o menu esteja acima de outros elementos */
+    }
+
+    .navbar-nav.active {
+        display: flex; /* Exibe o menu quando o botão "hambúrguer" é clicado */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        display: block; /* Exibe o botão "hambúrguer" em telas menores */
+        width: auto;
+        height: 3rem;
+        background-color: #432c23bd;
+        color: #f4f1ec;
+        border: none;
+        border-radius: 10px;
+        font-size: 30px;
+        cursor: pointer;
+        margin: 2rem; /* Adiciona margem para afastar do logotipo */
+    }
+
+    .navbar-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Garante espaçamento entre itens */
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    #navbar-logo {
+        margin: 1rem; /* Remove a margem para centralizar verticalmente */
+        object-fit: cover; /* Impede que a imagem seja distorcida */
+    }
+
+    #navbar-logo img {
+        height: 6rem; /* Ajusta a altura da imagem para telas menores */
+    }
+
+    #navbar-container {
+        flex-direction: column;
+    }
+
+    .open {
+        display: flex;
+    }
 }

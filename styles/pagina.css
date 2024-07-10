@@ -19,13 +19,15 @@
     font-weight: 700;
     font-size: 80px;
     text-align: center;
+    margin: 0;
+    padding-top: 2rem;
 }
 
 .subtitulo {
     color: #432c23;
-    position: absolute;
-    margin: 13rem 2rem;
+    display: flex;
     text-align: center;
+    margin: 0 1rem;
 }
 
 .imagens {
