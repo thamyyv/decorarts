@@ -86,6 +86,8 @@ body {
     z-index: 999; /* Garante que o menu esteja acima de outros elementos */
   }
 
+  
+
   .navbar-nav.active {
     display: flex; /* Exibe o menu quando o botão "hambúrguer" é clicado */
     flex-direction: column;
@@ -120,11 +122,13 @@ body {
   }
 
   #navbar-logo img {
-    height: 6rem; /* Ajusta a altura da imagem para telas menores */
+    height: 5rem; /* Ajusta a altura da imagem para telas menores */
   }
 
   #navbar-container {
     flex-direction: column;
+    position: fixed;
+    top: 0;
   }
 
   .open {
@@ -143,5 +147,13 @@ body {
     background-color:  #c2a393;
     border-radius: 4px;
     color: #f4f1ec;
+  }
+
+  .atalho-container {
+    padding-top: 8rem;
+  }
+
+  .imagens-container {
+    padding-top: 5rem;
   }
 }
