@@ -18,7 +18,7 @@ body {
 
 #navbar-container {
   background-color: #c2a393;
-  box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.356);
+  box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.208);
   display: flex;
   justify-content: center; /* Centraliza horizontalmente */
   width: 100%;
@@ -75,6 +75,10 @@ body {
 }
 
 @media (max-width: 1260px) {
+  .nav-link:hover {
+    box-shadow: none;
+}
+
   .navbar-nav {
     display: none; /* Esconde o menu em telas menores */
     position: absolute;
@@ -85,8 +89,6 @@ body {
     padding: 10px 0; /* Espaçamento interno */
     z-index: 999; /* Garante que o menu esteja acima de outros elementos */
   }
-
-  
 
   .navbar-nav.active {
     display: flex; /* Exibe o menu quando o botão "hambúrguer" é clicado */
